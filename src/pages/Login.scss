@@ -1,0 +1,49 @@
+.login-container {
+    & > .login-form {
+        position: relative;
+        background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(0,0,0,1) 100%);
+        background-size: cover;
+    
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:before, &:after {
+            filter: brightness(400%);
+        }
+    
+        & > form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;            padding: 8em;
+            height: 20vh;
+            margin: 30vw;
+            width: 20vw;
+            background: linear-gradient(90deg, rgba(51,89,195,1) 0%, rgba(131,58,180,1) 100%);
+            border-radius: 30px;
+    
+            & > label {
+                margin: 0.2em 0;
+            }
+
+            & > input {
+                width: 18em;
+                font-size: 1em;
+                margin: 0.2em 0;
+            } 
+    
+            & > button {
+                margin: 1em 0;
+                width: 10em;
+                transform: translateY(3em);
+            }
+
+        }
+    }
+}
